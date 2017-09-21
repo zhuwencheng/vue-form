@@ -1,0 +1,182 @@
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#app{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-size: 14px;
+}
+.c-999{
+    color: #999;
+}
+.el-input{
+    max-width: 240px;
+}
+.el-textarea{
+    width: 420px;
+}
+.option{
+    margin-bottom: 10px;
+}
+.el-dialog__footer{
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+.newform{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    .topdes{
+        line-height: 60px;
+        background: #20a0ff;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .leftsidebar{
+        width: 249px;
+        top: 60px;
+        bottom: 0;
+        position: absolute;
+        border-right: 1px solid #e0e0e0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        text-align: center;
+        .hd{
+            line-height: 48px;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 5px;
+        }
+        ul{
+            overflow: hidden;
+            padding: 0 10px;
+            li{
+                border: dashed 1px #dbdbdb;
+                background: #f9f9f9;
+                text-align: center;
+                float: left;
+                width: 46%;
+                margin: 5px 1.5% 0;
+                line-height: 25px;
+                list-style: none;
+                font-size: 12px;
+                color: #666;
+                cursor: pointer;
+                &:hover{
+                    background: #eaf5f9;
+                    border-color: #88dbf2;
+                }
+            }
+        }
+    }
+    .rightsidebar{width: 299px;
+        top: 60px;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        border-left: 1px solid #e0e0e0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        text-align: left;
+        .title{
+            line-height: 48px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .wrapper{
+            padding: 10px;
+            .hd{
+                line-height: 30px;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+            .el-input{
+                max-width: initial;
+            }
+            .add-item{
+                text-align: center;
+                cursor: pointer;
+                color: #0DB3A6;
+            }
+        }
+        .delete-icon{
+            margin-left: 35px;
+            cursor: pointer;
+        }
+    }
+    .centerForm{
+        left: 250px;
+        right: 300px;
+        top: 60px;
+        text-align: left;
+        position: absolute;
+        height: 100%;
+        overflow: hidden;
+        bottom: 0;
+        .c-form-wrapper{
+            overflow-y: auto;
+            overflow-x: hidden;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            top: 50px;
+            padding-bottom: 100px;
+        }
+        .tool-btn{
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: right;
+        }
+        .widget-view{
+            padding: 5px 50px 10px 10px;
+            position: relative;
+            .fl-label{
+                line-height: 30px;
+                margin-bottom: 5px;
+                padding-top: 5px;
+            }
+            &:hover{
+                background-color: #EAF3F6;
+            }
+            &.widget-select{
+                background-color: #D6EAF4;
+                .form-widget-mask{
+                    .el-icon-delete{
+                        display: block;
+                    }
+                }
+                
+            }
+            .form-widget-mask{
+                // display: none;
+                z-index: 10;
+                line-height: normal;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0);
+                .el-icon-delete{
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    font-size: 20px;
+                    color: #8492a6;
+                    cursor: pointer;
+                    display: none;
+                }
+            }
+        }
+    }
+}
